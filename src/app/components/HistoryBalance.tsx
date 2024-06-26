@@ -9,7 +9,7 @@ export default function HistoryBalance() {
     const itemsPerPage = 4;
     const totalPages = Math.ceil(history.length / itemsPerPage);
 
-    const handleClick = (pageNumber) => {
+    const handleClick = (pageNumber: React.SetStateAction<number>) => {
         setCurrentPage(pageNumber);
     };
 
